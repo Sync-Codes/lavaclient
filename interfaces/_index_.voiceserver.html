@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>SocketOptions | Lavaclient</title>
+	<title>VoiceServer | Lavaclient</title>
 	<meta name="description" content="Documentation for Lavaclient">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,13 +56,13 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_socket_.html">&quot;Socket&quot;</a>
+					<a href="../modules/_index_.html">&quot;index&quot;</a>
 				</li>
 				<li>
-					<a href="_socket_.socketoptions.html">SocketOptions</a>
+					<a href="_index_.voiceserver.html">VoiceServer</a>
 				</li>
 			</ul>
-			<h1>Interface SocketOptions</h1>
+			<h1>Interface VoiceServer</h1>
 		</div>
 	</div>
 </header>
@@ -73,7 +73,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">SocketOptions</span>
+						<span class="target">VoiceServer</span>
 					</li>
 				</ul>
 			</section>
@@ -84,10 +84,9 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_socket_.socketoptions.html#address" class="tsd-kind-icon">address</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_socket_.socketoptions.html#name" class="tsd-kind-icon">name</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_socket_.socketoptions.html#password" class="tsd-kind-icon">password</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_socket_.socketoptions.html#port" class="tsd-kind-icon">port</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_index_.voiceserver.html#endpoint" class="tsd-kind-icon">endpoint</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_index_.voiceserver.html#guild_id" class="tsd-kind-icon">guild_<wbr>id</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_index_.voiceserver.html#token" class="tsd-kind-icon">token</a></li>
 							</ul>
 						</section>
 					</div>
@@ -96,42 +95,32 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="address" class="tsd-anchor"></a>
-					<h3>address</h3>
-					<div class="tsd-signature tsd-kind-icon">address<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="endpoint" class="tsd-anchor"></a>
+					<h3>endpoint</h3>
+					<div class="tsd-signature tsd-kind-icon">endpoint<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Lavaclient/lavaclient/blob/249edd5/src/Socket.ts#L7">src/Socket.ts:7</a></li>
+							<li>Defined in <a href="https://github.com/Lavaclient/lavaclient/blob/249edd5/src/index.ts#L9">src/index.ts:9</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="name" class="tsd-anchor"></a>
-					<h3>name</h3>
-					<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="guild_id" class="tsd-anchor"></a>
+					<h3>guild_<wbr>id</h3>
+					<div class="tsd-signature tsd-kind-icon">guild_<wbr>id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Lavaclient/lavaclient/blob/249edd5/src/Socket.ts#L10">src/Socket.ts:10</a></li>
+							<li>Defined in <a href="https://github.com/Lavaclient/lavaclient/blob/249edd5/src/index.ts#L8">src/index.ts:8</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="password" class="tsd-anchor"></a>
-					<h3>password</h3>
-					<div class="tsd-signature tsd-kind-icon">password<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="token" class="tsd-anchor"></a>
+					<h3>token</h3>
+					<div class="tsd-signature tsd-kind-icon">token<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Lavaclient/lavaclient/blob/249edd5/src/Socket.ts#L9">src/Socket.ts:9</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="port" class="tsd-anchor"></a>
-					<h3>port</h3>
-					<div class="tsd-signature tsd-kind-icon">port<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/Lavaclient/lavaclient/blob/249edd5/src/Socket.ts#L8">src/Socket.ts:8</a></li>
+							<li>Defined in <a href="https://github.com/Lavaclient/lavaclient/blob/249edd5/src/index.ts#L7">src/index.ts:7</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -152,43 +141,61 @@
 					<li class=" tsd-kind-module">
 						<a href="../modules/_plugin_.html">&quot;<wbr>Plugin&quot;</a>
 					</li>
-					<li class="current tsd-kind-module">
+					<li class=" tsd-kind-module">
 						<a href="../modules/_socket_.html">&quot;<wbr>Socket&quot;</a>
 					</li>
-					<li class=" tsd-kind-module">
+					<li class="current tsd-kind-module">
 						<a href="../modules/_index_.html">&quot;index&quot;</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="../classes/_socket_.lavasocket.html" class="tsd-kind-icon">Lava<wbr>Socket</a>
+					<li class=" tsd-kind-reference tsd-parent-kind-module">
+						<a href="../modules/_index_.html#connectoptions" class="tsd-kind-icon">Connect<wbr>Options</a>
 					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-is-not-exported">
-						<a href="_socket_.queued.html" class="tsd-kind-icon">Queued</a>
+					<li class=" tsd-kind-reference tsd-parent-kind-module">
+						<a href="../modules/_index_.html#manager" class="tsd-kind-icon">Manager</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module">
+						<a href="../modules/_index_.html#manageroptions" class="tsd-kind-icon">Manager<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module">
+						<a href="../modules/_index_.html#playoptions" class="tsd-kind-icon">Play<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module">
+						<a href="../modules/_index_.html#player" class="tsd-kind-icon">Player</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module">
+						<a href="../modules/_index_.html#plugin" class="tsd-kind-icon">Plugin</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module">
+						<a href="../modules/_index_.html#socket" class="tsd-kind-icon">Socket</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module">
+						<a href="../modules/_index_.html#socketoptions" class="tsd-kind-icon">Socket<wbr>Options</a>
 					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-module">
-						<a href="_socket_.socketoptions.html" class="tsd-kind-icon">Socket<wbr>Options</a>
+						<a href="_index_.voiceserver.html" class="tsd-kind-icon">Voice<wbr>Server</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_socket_.socketoptions.html#address" class="tsd-kind-icon">address</a>
+								<a href="_index_.voiceserver.html#endpoint" class="tsd-kind-icon">endpoint</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_socket_.socketoptions.html#name" class="tsd-kind-icon">name</a>
+								<a href="_index_.voiceserver.html#guild_id" class="tsd-kind-icon">guild_<wbr>id</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_socket_.socketoptions.html#password" class="tsd-kind-icon">password</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_socket_.socketoptions.html#port" class="tsd-kind-icon">port</a>
+								<a href="_index_.voiceserver.html#token" class="tsd-kind-icon">token</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="_index_.voicestate.html" class="tsd-kind-icon">Voice<wbr>State</a>
+					</li>
 				</ul>
 			</nav>
 		</div>

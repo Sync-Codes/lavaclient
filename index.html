@@ -125,6 +125,41 @@ client.ws.on(<span class="hljs-string">"VOICE_STATE_UPDATE"</span>, <span class=
 					<h3>Destroying a Player</h3>
 				</a>
 				<pre><code class="language-ts">manager.removePlayer(<span class="hljs-string">"696355996657909790"</span>);</code></pre>
+				<a href="#extending-player-amp-socket" id="extending-player-amp-socket" style="color: inherit; text-decoration: none;">
+					<h3>Extending Player &amp; Socket</h3>
+				</a>
+				<pre><code class="language-ts"><span class="hljs-keyword">import</span> { Player, Manager } <span class="hljs-keyword">from</span> <span class="hljs-string">"lavaclient"</span>;
+
+<span class="hljs-keyword">class</span> CustomPlayer <span class="hljs-keyword">extends</span> Player {
+  bassboost(level) {
+    <span class="hljs-keyword">this</span>.equalizer([
+      {
+        band: <span class="hljs-number">0</span>,
+        gain: <span class="hljs-number">1</span>
+      }, {
+        band: <span class="hljs-number">1</span>,
+        gain: <span class="hljs-number">0.75</span>
+      }
+    ]);
+  }
+}
+
+<span class="hljs-keyword">const</span> manager = <span class="hljs-keyword">new</span> Manager([], {
+  player: CustomPlayer
+});</code></pre>
+				<pre><code class="language-ts"><span class="hljs-keyword">import</span> { Socket, Manager } <span class="hljs-keyword">from</span> <span class="hljs-string">"lavaclient"</span>;
+
+<span class="hljs-keyword">class</span> CustomSocket <span class="hljs-keyword">extends</span> Socket {
+  <span class="hljs-keyword">constructor</span>(<span class="hljs-params">...args</span>) {
+    <span class="hljs-keyword">super</span>(...args);
+
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"Socket Initalization."</span>);
+  }
+}
+
+<span class="hljs-keyword">const</span> manager = <span class="hljs-keyword">new</span> Manager([], { 
+  socket: CustomSocket 
+});</code></pre>
 				<a href="#contributers" id="contributers" style="color: inherit; text-decoration: none;">
 					<h2>Contributers</h2>
 				</a>

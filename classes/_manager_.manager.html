@@ -97,6 +97,7 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_manager_.manager.html#_nodes" class="tsd-kind-icon">#nodes</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_manager_.manager.html#nodes" class="tsd-kind-icon">nodes</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_manager_.manager.html#options" class="tsd-kind-icon">options</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_manager_.manager.html#players" class="tsd-kind-icon">players</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_manager_.manager.html#plugins" class="tsd-kind-icon">plugins</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_manager_.manager.html#reconnecttries" class="tsd-kind-icon">reconnect<wbr>Tries</a></li>
@@ -110,8 +111,16 @@
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
+							<h3>Accessors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="_manager_.manager.html#player" class="tsd-kind-icon">player</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="_manager_.manager.html#socket" class="tsd-kind-icon">socket</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_manager_.manager.html#_runpluginmethod" class="tsd-kind-icon">_run<wbr>Plugin<wbr>Method</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_manager_.manager.html#addlistener" class="tsd-kind-icon">add<wbr>Listener</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_manager_.manager.html#emit" class="tsd-kind-icon">emit</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_manager_.manager.html#eventnames" class="tsd-kind-icon">event<wbr>Names</a></li>
@@ -154,7 +163,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides EventEmitter.__constructor</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/Lavaclient/lavaclient/blob/9ad18ca/src/Manager.ts#L49">src/Manager.ts:49</a></li>
+									<li>Defined in <a href="https://github.com/Lavaclient/lavaclient/blob/249edd5/src/Manager.ts#L34">src/Manager.ts:34</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -179,7 +188,7 @@
 					<div class="tsd-signature tsd-kind-icon">#nodes<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_socket_.socketoptions.html" class="tsd-signature-type">SocketOptions</a><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Lavaclient/lavaclient/blob/9ad18ca/src/Manager.ts#L37">src/Manager.ts:37</a></li>
+							<li>Defined in <a href="https://github.com/Lavaclient/lavaclient/blob/249edd5/src/Manager.ts#L22">src/Manager.ts:22</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -189,7 +198,17 @@
 					<div class="tsd-signature tsd-kind-icon">nodes<span class="tsd-signature-symbol">:</span> <a href="_socket_.lavasocket.html" class="tsd-signature-type">LavaSocket</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = []</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Lavaclient/lavaclient/blob/9ad18ca/src/Manager.ts#L47">src/Manager.ts:47</a></li>
+							<li>Defined in <a href="https://github.com/Lavaclient/lavaclient/blob/249edd5/src/Manager.ts#L33">src/Manager.ts:33</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="options" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> options</h3>
+					<div class="tsd-signature tsd-kind-icon">options<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_manager_.manageroptions.html" class="tsd-signature-type">ManagerOptions</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Lavaclient/lavaclient/blob/249edd5/src/Manager.ts#L36">src/Manager.ts:36</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -199,7 +218,7 @@
 					<div class="tsd-signature tsd-kind-icon">players<span class="tsd-signature-symbol">:</span> <a href="_player_.guildplayer.html" class="tsd-signature-type">GuildPlayer</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = []</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Lavaclient/lavaclient/blob/9ad18ca/src/Manager.ts#L49">src/Manager.ts:49</a></li>
+							<li>Defined in <a href="https://github.com/Lavaclient/lavaclient/blob/249edd5/src/Manager.ts#L34">src/Manager.ts:34</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -209,7 +228,7 @@
 					<div class="tsd-signature tsd-kind-icon">plugins<span class="tsd-signature-symbol">:</span> <a href="_plugin_.plugin.html" class="tsd-signature-type">Plugin</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = []</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Lavaclient/lavaclient/blob/9ad18ca/src/Manager.ts#L48">src/Manager.ts:48</a></li>
+							<li>Defined in <a href="https://github.com/Lavaclient/lavaclient/blob/249edd5/src/Manager.ts#L32">src/Manager.ts:32</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -219,7 +238,7 @@
 					<div class="tsd-signature tsd-kind-icon">reconnect<wbr>Tries<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Lavaclient/lavaclient/blob/9ad18ca/src/Manager.ts#L39">src/Manager.ts:39</a></li>
+							<li>Defined in <a href="https://github.com/Lavaclient/lavaclient/blob/249edd5/src/Manager.ts#L24">src/Manager.ts:24</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -229,7 +248,7 @@
 					<div class="tsd-signature tsd-kind-icon">resume<wbr>Key<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Lavaclient/lavaclient/blob/9ad18ca/src/Manager.ts#L42">src/Manager.ts:42</a></li>
+							<li>Defined in <a href="https://github.com/Lavaclient/lavaclient/blob/249edd5/src/Manager.ts#L27">src/Manager.ts:27</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -239,7 +258,7 @@
 					<div class="tsd-signature tsd-kind-icon">resume<wbr>Timeout<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Lavaclient/lavaclient/blob/9ad18ca/src/Manager.ts#L43">src/Manager.ts:43</a></li>
+							<li>Defined in <a href="https://github.com/Lavaclient/lavaclient/blob/249edd5/src/Manager.ts#L28">src/Manager.ts:28</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -249,7 +268,7 @@
 					<div class="tsd-signature tsd-kind-icon">send<span class="tsd-signature-symbol">:</span> <a href="../modules/_manager_.html#sendpacketfunction" class="tsd-signature-type">SendPacketFunction</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Lavaclient/lavaclient/blob/9ad18ca/src/Manager.ts#L45">src/Manager.ts:45</a></li>
+							<li>Defined in <a href="https://github.com/Lavaclient/lavaclient/blob/249edd5/src/Manager.ts#L30">src/Manager.ts:30</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -259,7 +278,7 @@
 					<div class="tsd-signature tsd-kind-icon">shards<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Lavaclient/lavaclient/blob/9ad18ca/src/Manager.ts#L44">src/Manager.ts:44</a></li>
+							<li>Defined in <a href="https://github.com/Lavaclient/lavaclient/blob/249edd5/src/Manager.ts#L29">src/Manager.ts:29</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -269,7 +288,7 @@
 					<div class="tsd-signature tsd-kind-icon">store<wbr>Stats<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Lavaclient/lavaclient/blob/9ad18ca/src/Manager.ts#L41">src/Manager.ts:41</a></li>
+							<li>Defined in <a href="https://github.com/Lavaclient/lavaclient/blob/249edd5/src/Manager.ts#L26">src/Manager.ts:26</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -279,7 +298,7 @@
 					<div class="tsd-signature tsd-kind-icon">user<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Lavaclient/lavaclient/blob/9ad18ca/src/Manager.ts#L40">src/Manager.ts:40</a></li>
+							<li>Defined in <a href="https://github.com/Lavaclient/lavaclient/blob/249edd5/src/Manager.ts#L25">src/Manager.ts:25</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -296,7 +315,70 @@
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Accessors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
+					<a name="player" class="tsd-anchor"></a>
+					<h3>player</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> player<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">typeof </span><span class="tsd-signature-type">GuildPlayer</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Lavaclient/lavaclient/blob/249edd5/src/Manager.ts#L61">src/Manager.ts:61</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">typeof </span><span class="tsd-signature-type">GuildPlayer</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
+					<a name="socket" class="tsd-anchor"></a>
+					<h3>socket</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> socket<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">typeof </span><span class="tsd-signature-type">LavaSocket</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Lavaclient/lavaclient/blob/249edd5/src/Manager.ts#L72">src/Manager.ts:72</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">typeof </span><span class="tsd-signature-type">LavaSocket</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="_runpluginmethod" class="tsd-anchor"></a>
+					<h3>_run<wbr>Plugin<wbr>Method</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">_run<wbr>Plugin<wbr>Method<span class="tsd-signature-symbol">(</span>method<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">keyof </span><a href="_plugin_.plugin.html" class="tsd-signature-type">Plugin</a>, <span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Lavaclient/lavaclient/blob/249edd5/src/Manager.ts#L202">src/Manager.ts:202</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>method: <span class="tsd-signature-symbol">keyof </span><a href="_plugin_.plugin.html" class="tsd-signature-type">Plugin</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>args: <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 					<a name="addlistener" class="tsd-anchor"></a>
 					<h3>add<wbr>Listener</h3>
@@ -415,14 +497,9 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Lavaclient/lavaclient/blob/9ad18ca/src/Manager.ts#L173">src/Manager.ts:173</a></li>
+									<li>Defined in <a href="https://github.com/Lavaclient/lavaclient/blob/249edd5/src/Manager.ts#L171">src/Manager.ts:171</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Socket</p>
-								</div>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -443,14 +520,9 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Lavaclient/lavaclient/blob/9ad18ca/src/Manager.ts#L129">src/Manager.ts:129</a></li>
+									<li>Defined in <a href="https://github.com/Lavaclient/lavaclient/blob/249edd5/src/Manager.ts#L128">src/Manager.ts:128</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Player</p>
-								</div>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -471,7 +543,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Lavaclient/lavaclient/blob/9ad18ca/src/Manager.ts#L83">src/Manager.ts:83</a></li>
+									<li>Defined in <a href="https://github.com/Lavaclient/lavaclient/blob/249edd5/src/Manager.ts#L83">src/Manager.ts:83</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -854,13 +926,13 @@
 					<a name="removenode" class="tsd-anchor"></a>
 					<h3>remove<wbr>Node</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">remove<wbr>Node<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">remove<wbr>Node<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Lavaclient/lavaclient/blob/9ad18ca/src/Manager.ts#L185">src/Manager.ts:185</a></li>
+									<li>Defined in <a href="https://github.com/Lavaclient/lavaclient/blob/249edd5/src/Manager.ts#L183">src/Manager.ts:183</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -869,7 +941,7 @@
 									<h5>name: <span class="tsd-signature-type">string</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -883,7 +955,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Lavaclient/lavaclient/blob/9ad18ca/src/Manager.ts#L133">src/Manager.ts:133</a></li>
+									<li>Defined in <a href="https://github.com/Lavaclient/lavaclient/blob/249edd5/src/Manager.ts#L132">src/Manager.ts:132</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -900,19 +972,19 @@
 					<a name="serverupdate" class="tsd-anchor"></a>
 					<h3>server<wbr>Update</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">server<wbr>Update<span class="tsd-signature-symbol">(</span>server<span class="tsd-signature-symbol">: </span><a href="../interfaces/_manager_.voiceserver.html" class="tsd-signature-type">VoiceServer</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">server<wbr>Update<span class="tsd-signature-symbol">(</span>server<span class="tsd-signature-symbol">: </span><a href="../interfaces/_index_.voiceserver.html" class="tsd-signature-type">VoiceServer</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Lavaclient/lavaclient/blob/9ad18ca/src/Manager.ts#L105">src/Manager.ts:105</a></li>
+									<li>Defined in <a href="https://github.com/Lavaclient/lavaclient/blob/249edd5/src/Manager.ts#L105">src/Manager.ts:105</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>server: <a href="../interfaces/_manager_.voiceserver.html" class="tsd-signature-type">VoiceServer</a></h5>
+									<h5>server: <a href="../interfaces/_index_.voiceserver.html" class="tsd-signature-type">VoiceServer</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -947,19 +1019,19 @@
 					<a name="stateupdate" class="tsd-anchor"></a>
 					<h3>state<wbr>Update</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">state<wbr>Update<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><a href="../interfaces/_manager_.voicestate.html" class="tsd-signature-type">VoiceState</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">state<wbr>Update<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><a href="../interfaces/_index_.voicestate.html" class="tsd-signature-type">VoiceState</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Lavaclient/lavaclient/blob/9ad18ca/src/Manager.ts#L115">src/Manager.ts:115</a></li>
+									<li>Defined in <a href="https://github.com/Lavaclient/lavaclient/blob/249edd5/src/Manager.ts#L115">src/Manager.ts:115</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>state: <a href="../interfaces/_manager_.voicestate.html" class="tsd-signature-type">VoiceState</a></h5>
+									<h5>state: <a href="../interfaces/_index_.voicestate.html" class="tsd-signature-type">VoiceState</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -976,7 +1048,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Lavaclient/lavaclient/blob/9ad18ca/src/Manager.ts#L148">src/Manager.ts:148</a></li>
+									<li>Defined in <a href="https://github.com/Lavaclient/lavaclient/blob/249edd5/src/Manager.ts#L147">src/Manager.ts:147</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1067,6 +1139,9 @@
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="_manager_.manager.html#nodes" class="tsd-kind-icon">nodes</a>
 							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_manager_.manager.html#options" class="tsd-kind-icon">options</a>
+							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="_manager_.manager.html#players" class="tsd-kind-icon">players</a>
 							</li>
@@ -1096,6 +1171,15 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static">
 								<a href="_manager_.manager.html#defaultmaxlisteners" class="tsd-kind-icon">default<wbr>Max<wbr>Listeners</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
+								<a href="_manager_.manager.html#player" class="tsd-kind-icon">player</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
+								<a href="_manager_.manager.html#socket" class="tsd-kind-icon">socket</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_manager_.manager.html#_runpluginmethod" class="tsd-kind-icon">_run<wbr>Plugin<wbr>Method</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="_manager_.manager.html#addlistener" class="tsd-kind-icon">add<wbr>Listener</a>
@@ -1175,12 +1259,6 @@
 				<ul class="after-current">
 					<li class=" tsd-kind-interface tsd-parent-kind-module">
 						<a href="../interfaces/_manager_.manageroptions.html" class="tsd-kind-icon">Manager<wbr>Options</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="../interfaces/_manager_.voiceserver.html" class="tsd-kind-icon">Voice<wbr>Server</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="../interfaces/_manager_.voicestate.html" class="tsd-kind-icon">Voice<wbr>State</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-module tsd-is-not-exported">
 						<a href="../modules/_manager_.html#sendpacketfunction" class="tsd-kind-icon">Send<wbr>Packet<wbr>Function</a>
