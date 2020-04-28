@@ -64,8 +64,8 @@
 	<div class="row">
 		<div class="col-8 col-content">
 			<div class="tsd-panel tsd-typography">
-				<a href="#lavaclient-middot--" id="lavaclient-middot--" style="color: inherit; text-decoration: none;">
-					<h1>Lavaclient &middot; <a href="https://discord.gg/BnQECNd"><img src="https://discordapp.com/api/guilds/696355996657909790/embed.png" alt="Discord"></a> <a href="https://npmjs.com/lavaclient"><img src="https://img.shields.io/npm/v/lavaclient.svg?maxAge=3600" alt="Version"></a></h1>
+				<a href="#lavaclient-middot---" id="lavaclient-middot---" style="color: inherit; text-decoration: none;">
+					<h1>Lavaclient &middot; <a href="https://discord.gg/BnQECNd"><img src="https://discordapp.com/api/guilds/696355996657909790/embed.png" alt="Discord"></a> <a href="https://npmjs.com/lavaclient"><img src="https://img.shields.io/npm/v/lavaclient.svg?maxAge=3600" alt="Version"></a> <a href="https://www.codacy.com/gh/Lavaclient/lavaclient?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Lavaclient/lavaclient&amp;utm_campaign=Badge_Grade"><img src="https://api.codacy.com/project/badge/Grade/fe049eb85ee74900ae764fc5af6a6299" alt="Codacy Badge"></a></h1>
 				</a>
 				<blockquote>
 					<p>A simple and lightweight <a href="https://github.com/Frederikam/Lavalink">Lavalink</a> client written in TypeScript. Works with any Discord Library.</p>
@@ -104,9 +104,9 @@
 
 <span class="hljs-keyword">const</span> client = <span class="hljs-keyword">new</span> Client();
 <span class="hljs-keyword">const</span> manager = <span class="hljs-keyword">new</span> Manager(nodes, {
-  send: <span class="hljs-function">(<span class="hljs-params">guildId, packet</span>) =&gt;</span> {
-    <span class="hljs-keyword">const</span> guild = client.guilds.cache.get(guildId);
-    <span class="hljs-keyword">if</span> (guild) <span class="hljs-keyword">return</span> guild.shard.send(packet);
+  send: <span class="hljs-function">(<span class="hljs-params">id, payload</span>) =&gt;</span> {
+    <span class="hljs-keyword">const</span> guild = client.guilds.cache.get(id);
+    <span class="hljs-keyword">if</span> (guild) <span class="hljs-keyword">return</span> guild.shard.send(payload);
     <span class="hljs-keyword">return</span>;
   },
 });
@@ -117,14 +117,12 @@ client.ws.on(<span class="hljs-string">"VOICE_STATE_UPDATE"</span>, <span class=
 				<a href="#joining-amp-leaving" id="joining-amp-leaving" style="color: inherit; text-decoration: none;">
 					<h3>Joining &amp; Leaving</h3>
 				</a>
-				<pre><code class="language-ts"><span class="hljs-keyword">const</span> player = manager.summonPlayer(<span class="hljs-string">"696355996657909790"</span>);
+				<pre><code class="language-ts"><span class="hljs-keyword">const</span> player = <span class="hljs-keyword">await</span> manager.join({
+  guild: <span class="hljs-string">"696355996657909790"</span>,
+  channel: <span class="hljs-string">"696359398708215848"</span>
+});
 
-<span class="hljs-keyword">await</span> player.connect(<span class="hljs-string">"696359398708215848"</span>, { deaf: <span class="hljs-literal">true</span> });
-<span class="hljs-keyword">await</span> player.leave();</code></pre>
-				<a href="#destroying-a-player" id="destroying-a-player" style="color: inherit; text-decoration: none;">
-					<h3>Destroying a Player</h3>
-				</a>
-				<pre><code class="language-ts">manager.removePlayer(<span class="hljs-string">"696355996657909790"</span>);</code></pre>
+<span class="hljs-keyword">await</span> manager.leave(<span class="hljs-string">"696355996657909790"</span>)</code></pre>
 				<a href="#extending-player-amp-socket" id="extending-player-amp-socket" style="color: inherit; text-decoration: none;">
 					<h3>Extending Player &amp; Socket</h3>
 				</a>
@@ -157,8 +155,8 @@ client.ws.on(<span class="hljs-string">"VOICE_STATE_UPDATE"</span>, <span class=
   }
 }
 
-<span class="hljs-keyword">const</span> manager = <span class="hljs-keyword">new</span> Manager([], { 
-  socket: CustomSocket 
+<span class="hljs-keyword">const</span> manager = <span class="hljs-keyword">new</span> Manager([], {
+  socket: CustomSocket
 });</code></pre>
 				<a href="#contributers" id="contributers" style="color: inherit; text-decoration: none;">
 					<h2>Contributers</h2>
@@ -190,10 +188,10 @@ client.ws.on(<span class="hljs-string">"VOICE_STATE_UPDATE"</span>, <span class=
 						<a href="modules/_player_.html">&quot;<wbr>Player&quot;</a>
 					</li>
 					<li class=" tsd-kind-module">
-						<a href="modules/_plugin_.html">&quot;<wbr>Plugin&quot;</a>
+						<a href="modules/_socket_.html">&quot;<wbr>Socket&quot;</a>
 					</li>
 					<li class=" tsd-kind-module">
-						<a href="modules/_socket_.html">&quot;<wbr>Socket&quot;</a>
+						<a href="modules/_util_.html">&quot;<wbr>Util&quot;</a>
 					</li>
 					<li class=" tsd-kind-module">
 						<a href="modules/_index_.html">&quot;index&quot;</a>
